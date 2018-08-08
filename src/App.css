@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.search-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.movies-list-item {
+  margin-bottom: 20px;
+  width: 48%; 
+}
