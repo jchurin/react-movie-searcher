@@ -6,15 +6,16 @@ export class Movie extends Component {
     static propTypes = {
         title: PropTypes.string,
         year: PropTypes.string,
-        poster: PropTypes.string
+        poster: PropTypes.string,
+        id: PropTypes.string,
     }
 
     render() {
 
-        const { title, year, poster } = this.props;
+        const { id, title, year, poster } = this.props;
 
         return (
-            <div className="card">
+            <a href={ `?id=${ id }` } className="card">
                 <div className="card-image">
                     <figure className="image">
                         <img 
@@ -32,7 +33,7 @@ export class Movie extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         )
     }
 }

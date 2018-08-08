@@ -21,6 +21,7 @@ export class MoviesList extends Component {
                                     title={movie.Title}
                                     year={movie.Year}
                                     poster={movie.Poster}
+                                    id={movie.imdbID}
                                 />
                             </div>
                         )
